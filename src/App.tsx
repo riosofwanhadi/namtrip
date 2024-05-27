@@ -1,7 +1,7 @@
 import useAppRoute from "./routes";
 
 function App() {
-	const { Routes, replace } = useAppRoute();
+	const { Routes } = useAppRoute();
 
 	return <Routes />;
 }

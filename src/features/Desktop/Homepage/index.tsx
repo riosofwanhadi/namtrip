@@ -7,7 +7,6 @@ import {
 	Image,
 	SimpleGrid,
 	Space,
-	Spoiler,
 	Stack,
 	Text,
 	Title,
@@ -15,7 +14,6 @@ import {
 	useMantineTheme,
 } from "@mantine/core";
 import useAppRoute from "../../../routes";
-import { IconChevronRight, IconChevronLeft } from "@tabler/icons-react";
 import { useRef } from "react";
 import { FormattedMessage } from "react-intl";
 import { carousel, ourAdvantages, ourPartners, ourProduct } from "./arrays";

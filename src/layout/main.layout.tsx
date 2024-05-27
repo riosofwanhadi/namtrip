@@ -25,7 +25,7 @@ import { LOCALES } from "../I18N";
 import { eng, id } from "../assets";
 import { useSelectLanguageAction } from "../hooks/changeLanguage/hook";
 import { FormattedMessage } from "react-intl";
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 function MainLayout() {
 	const [language, setLanguage] = useState("en-us");
@@ -49,7 +49,7 @@ function MainLayout() {
 								</Stack>
 							</Group>
 						</UnstyledButton>
-						<NavHashLink
+						<HashLink
 							to="/#products"
 							scroll={(el: any) =>
 								el.scrollIntoView({ behavior: "smooth", block: "center" })
@@ -58,10 +58,9 @@ function MainLayout() {
 							<Text c="#73c088" style={{ fontStyle: "normal" }}>
 								<FormattedMessage id="headProduct" />
 							</Text>
-						</NavHashLink>
-						<NavHashLink
+						</HashLink>
+						<HashLink
 							to="/#advantages"
-							activeStyle={{ color: "black" }}
 							scroll={(el: any) =>
 								el.scrollIntoView({ behavior: "smooth", block: "center" })
 							}
@@ -69,7 +68,7 @@ function MainLayout() {
 							<Text c="#73c088">
 								<FormattedMessage id="headAdvantage" />
 							</Text>
-						</NavHashLink>
+						</HashLink>
 					</Group>
 					<Group justify="right">
 						<Button color="#73c088" w={100} onClick={() => go("/login")}>
